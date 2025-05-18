@@ -28,8 +28,10 @@
 4. Sorted by estimated_clv in DESCENDING order.
 
 ## Challenges Faced
-- The only challenge I faced was the overcounting problem when I was trying to solve the first question, and I was getting million-rows 
- as savings_count, while the entire data row count is not up to a million.
+1. One of the challenges I faced was the overcounting problem when I was trying to solve the first question, and I was getting million-rows as savings_count, while the entire data row count is not up to a million.
   I resolved this through the use of using subqueries to nest the two tables
   I was getting the savings count and investment count from. This aided my quick resolution in the remaining three questions, as I didn't
   make such mistake again.
+
+2. The second challenge I faced was the execution time error. MySQL Workbench was giving me an initial error of 'Lost connection to server'.
+   I resolved this by going to the preferences in the setting to adjust the execution time to allow more time for execution. This idea was gotten online.
