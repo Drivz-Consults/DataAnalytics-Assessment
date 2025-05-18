@@ -10,7 +10,7 @@
 **Steps:**
 1. Counted all transactions in savings_savingsaccount per customer per month using YEAR(transaction_date) and MONTH(transaction_date).
 2. Fixed overcounting from joins by pre-aggregating in a subquery before joining with users_customuser.
-3. Categorized averages (≥10, 3-9, ≤2 transactions/month) as High, Medium, Low Frequency with CASE.
+3. Categorized averages (≥10, 3-9, ≤2 transactions/month) as High, Medium, Low Frequency respectively with CASE.
 4. Grouped by category for Frequency_category, Customer_count, Avg_transactions_per_month
 
 # Question 3: Account Inactivity Alert
